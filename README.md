@@ -5,7 +5,7 @@ This repository contains R code to prepare benchmark data set `Levine_2015_marro
 
 The data set is a 13-dimensional mass cytometry data set, consisting of protein expression levels for `n = 167,044` cells, `p = 13` protein markers (dimensions), and `k = 24` manually gated cell populations (clusters), from one individual. Cluster labels are available for 49% (81,747) of the cells.
 
-This is a companion repository to [benchmark-data-Levine-2015-marrow-32](https://github.com/lmweber/benchmark-data-Levine-2015-marrow-32), which contains R code to prepare a similar benchmark data set with higher dimensionality (32 dimensions). For more details, including background information and additional details on the data sets, see the other repository.
+This is a companion repository to [benchmark-data-Levine-32-dim](https://github.com/lmweber/benchmark-data-Levine-32-dim), which contains R code to prepare a similar benchmark data set with higher dimensionality (32 dimensions). For more details, including background information and additional details on the data sets, see the other repository.
 
 The data set is sourced from the following paper:
 
@@ -23,7 +23,7 @@ If you use these data sets, please reference the paper by Levine et al. (2015).
 
 ## Background
 
-For background information on mass cytometry, and additional details on the Levine et al. (2015) paper and the benchmark data sets, see the other repository at: [benchmark-data-Levine-2015-marrow-32](https://github.com/lmweber/benchmark-data-Levine-2015-marrow-32)
+For background information on mass cytometry, and additional details on the Levine et al. (2015) paper and the benchmark data sets, see the other repository at: [benchmark-data-Levine-32-dim](https://github.com/lmweber/benchmark-data-Levine-32-dim)
 
 
 
@@ -51,7 +51,7 @@ This repository contains an R script to pre-process and export the 13-dimensiona
 - Apply standard arcsinh transform (scale factor 5 for mass cytometry data)
 - Export data in FCS and tab-delimited TXT format (separate files for assigned/unassigned cells, and with/without arcsinh transform)
 
-For more details, see the repository for the 32-dimensional benchmark data set at: [benchmark-data-Levine-2015-marrow-32](https://github.com/lmweber/benchmark-data-Levine-2015-marrow-32)
+For more details, see the repository for the 32-dimensional benchmark data set at: [benchmark-data-Levine-32-dim](https://github.com/lmweber/benchmark-data-Levine-32-dim)
 
 
 
