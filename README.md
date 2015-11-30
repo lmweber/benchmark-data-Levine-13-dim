@@ -1,5 +1,5 @@
-Clustering benchmark data set: Levine_2015_marrow_13
-====================================================
+Clustering benchmark data: 13-dimensional data set from Levine et al. (2015)
+============================================================================
 
 This repository contains R code to prepare benchmark data set `Levine_2015_marrow_13`, which can be used to test clustering algorithms.
 
