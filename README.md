@@ -47,9 +47,9 @@ This repository contains an R script to pre-process and export the 13-dimensiona
 
 - Load the FCS files
 - Extract cell population names and protein marker names
-- Extract cluster labels (one cluster per FCS file; no cluster labels available for "unassigned" cells)
+- Extract cluster labels (one cluster per FCS file; "unassigned" cells are labeled "NA")
 - Apply standard arcsinh transform (scale factor 5 for mass cytometry data)
-- Export data in FCS and tab-delimited TXT format (separate files for assigned/unassigned cells, and with/without arcsinh transform)
+- Export data in FCS and tab-delimited TXT format (separate files with/without arcsinh transform)
 
 For more details, see the repository for the 32-dimensional benchmark data set [benchmark-data-Levine-32-dim](https://github.com/lmweber/benchmark-data-Levine-32-dim).
 
@@ -65,12 +65,10 @@ The files in this repository are:
 - [population_names_Levine_2015_marrow_13.txt](data/population_names_Levine_2015_marrow_13.txt): cell population names for each of the 24 clusters
 
 - FCS files in folder [data](data/): exported data files in FCS format
-    - [Levine_2015_marrow_13.fcs](data/Levine_2015_marrow_13.fcs): main data file (transformed data, with cluster labels added)
-    - [Levine_2015_marrow_13_unassigned.fcs](data/Levine_2015_marrow_13_unassigned.fcs): additional file for "unassigned" cells (cells without cluster labels)
-    - [Levine_2015_marrow_13_notransform.fcs](data/Levine_2015_marrow_13_notransform.fcs): main data file, without arcsinh transform
-    - [Levine_2015_marrow_13_notransform_unassigned.fcs](data/Levine_2015_marrow_13_notransform_unassigned.fcs): additional file for "unassigned" cells, without arcsinh transform
+    - [Levine_2015_marrow_13.fcs](data/Levine_2015_marrow_13.fcs): main data file (transformed data, with cluster labels)
+    - [Levine_2015_marrow_13_notransform.fcs](data/Levine_2015_marrow_13_notransform.fcs): without arcsinh transform
 
-- TXT files in folder [data](data/): exported data files in tab-delimited TXT format. There are four files, with the same filenames and containing the same data as the FCS files described above. These files may be easier to access if you are unfamiliar with the FCS format.
+- TXT files in folder [data](data/): exported data files in tab-delimited TXT format. There are two files, with the same filenames and containing the same data as the FCS files described above. These files may be easier to access if you are unfamiliar with the FCS format.
 
 
 
