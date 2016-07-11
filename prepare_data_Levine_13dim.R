@@ -17,7 +17,7 @@
 # Link to data: https://www.cytobank.org/cytobank/experiments/46259 (download the FCS
 # files with Actions -> Export -> Download Files -> All FCS Files)
 # 
-# Lukas Weber, March 2016
+# Lukas Weber, July 2016
 #########################################################################################
 
 
